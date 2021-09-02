@@ -16,6 +16,10 @@
 		5DC1861A26D6706D005D110A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC1861926D6706D005D110A /* Assets.xcassets */; };
 		5DC1862526D6706D005D110A /* SpaceShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1862426D6706D005D110A /* SpaceShooterTests.swift */; };
 		5DC1863026D6706E005D110A /* SpaceShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1862F26D6706E005D110A /* SpaceShooterUITests.swift */; };
+		5DC1864126D843F9005D110A /* bullet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DC1863F26D843F9005D110A /* bullet.mp3 */; };
+		5DC1864226D843F9005D110A /* vzriv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DC1864026D843F9005D110A /* vzriv.mp3 */; };
+		5DC1864526D8443A005D110A /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DC1864326D8443A005D110A /* Starfield.sks */; };
+		5DC1864626D8443A005D110A /* Vzriv.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DC1864426D8443A005D110A /* Vzriv.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		5DC1862B26D6706D005D110A /* SpaceShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceShooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC1862F26D6706E005D110A /* SpaceShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShooterUITests.swift; sourceTree = "<group>"; };
 		5DC1863126D6706E005D110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC1863F26D843F9005D110A /* bullet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet.mp3; sourceTree = "<group>"; };
+		5DC1864026D843F9005D110A /* vzriv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vzriv.mp3; sourceTree = "<group>"; };
+		5DC1864326D8443A005D110A /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		5DC1864426D8443A005D110A /* Vzriv.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Vzriv.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,10 @@
 				5DC1861426D67066005D110A /* GameViewController.swift */,
 				5DC1861626D67066005D110A /* Main.storyboard */,
 				5DC1861926D6706D005D110A /* Assets.xcassets */,
+				5DC1863F26D843F9005D110A /* bullet.mp3 */,
+				5DC1864326D8443A005D110A /* Starfield.sks */,
+				5DC1864426D8443A005D110A /* Vzriv.sks */,
+				5DC1864026D843F9005D110A /* vzriv.mp3 */,
 				5DC1861B26D6706D005D110A /* Info.plist */,
 			);
 			path = SpaceShooter;
@@ -234,10 +246,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC1864526D8443A005D110A /* Starfield.sks in Resources */,
+				5DC1864626D8443A005D110A /* Vzriv.sks in Resources */,
 				5DC1861826D67066005D110A /* Main.storyboard in Resources */,
 				5DC1860F26D67066005D110A /* GameScene.sks in Resources */,
+				5DC1864226D843F9005D110A /* vzriv.mp3 in Resources */,
 				5DC1861A26D6706D005D110A /* Assets.xcassets in Resources */,
 				5DC1861126D67066005D110A /* Actions.sks in Resources */,
+				5DC1864126D843F9005D110A /* bullet.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -417,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54X8EEJG4R;
 				INFOPLIST_FILE = SpaceShooter/Info.plist;
@@ -441,8 +458,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Prokhorov-inc..SpaceShooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54X8EEJG4R;
 				INFOPLIST_FILE = SpaceShooter/Info.plist;
@@ -460,8 +479,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Prokhorov-inc..SpaceShooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
